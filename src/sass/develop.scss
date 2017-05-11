@@ -30,7 +30,7 @@
 *,*:before, *:after{box-sizing:border-box;outline:none;}
 *,body,html{-webkit-text-size-adjust: none;-webkit-appearance: none;max-height: 9001em;}
 html{height:100%;}
-body{min-height:100%;width:100%;min-width:320px;font-family:arial,sans-serif;background:#fff;color:#3d3d3d;position:relative;font-size: 16px;line-height: 1;
+body{min-height:100%;width:100%;min-width:320px;font-family:'ProximaNova';background:#fff;color:#373535;position:relative;font-size: 16px;line-height: 1;
 
     /* styles for wp-admin panel */
 
@@ -62,7 +62,7 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* wraps styling*/
 
-.mbox{max-width:1024px;width:100%;margin:0 auto;position:relative;z-index:1;}
+.mbox{max-width:1170px; padding: 0 15px; width:100%;margin:0 auto;position:relative;z-index:1;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
 /* /wraps styling*/
@@ -72,10 +72,10 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 .footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;overflow:hidden;}
 
 input, textarea{
-    &::-webkit-input-placeholder {color:#212121;}
-    &:-moz-placeholder {color:#212121;opacity:1;}
-    &::-moz-placeholder {color:#212121;opacity:1;}
-    &:-ms-input-placeholder {color:#212121;}
+    &::-webkit-input-placeholder {color:#8d8d8d; font-weight: 400; font-size: 14px;}
+    &:-moz-placeholder {color:#8d8d8d;opacity:1; font-weight: 400; font-size: 14px;}
+    &::-moz-placeholder {color:#8d8d8d;opacity:1; font-weight: 400; font-size: 14px;}
+    &:-ms-input-placeholder {color:#8d8d8d; font-weight: 400; font-size: 14px;}
 }
 
 /*End Layout*/
@@ -95,7 +95,51 @@ input, textarea{
     }
 }
 
-//  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
+ @include font-face('ProximaNova', 'ProximaNovaBold', 700);
+ @include font-face('ProximaNova', 'ProximaNovaRegular', 400);
+ @include font-face('ProximaNova', 'ProximaNovaLight', 300);
+ @include font-face('ProximaNova', 'ProximaNovaSemibold', 600);
 
 
 /*/fonts*/
+
+/*text*/
+    h1{ font-size: 60px; color: #ffca27; font-weight: 400; text-align: center;}
+    h2{ font-size: 45px; color: #7f6146; font-weight: 400; position: relative; text-align: center;
+        &:before{content:''; display: block; width: 124px; height: 2px; position: absolute; bottom: 0; left: calc(50% - 62px); background-color: #ffca27;}
+        &.noline{ color: #ffca27;}
+    }
+    h4{ font-size: 24px; color: #373535; font-weight: 400; text-align: center;}
+    h5{ font-size: 19px; color: #373535; font-weight: 400; text-align: center;}
+/*END text*/
+/*form*/
+  .form_row{ display: flex; justify-content:space-around;}
+  .form_input{ width: 267px; padding: 0 7.5px; margin-bottom: 30px;
+    input{border-radius:3px; width: 100%; height: 42px; line-height: 42px; background: none; background-color: #fff; padding-left: 20px;}
+  }
+  .button{
+    span{ display: flex; justify-content: center; align-items: center; background-color: #ffca27; color: #000; font-size: 19px; font-weight: 400; text-transform: uppercase; width: 100%; height: 50px; }
+  }
+/*END form*/
+/*header*/
+    .header{ width: 100%; background-color: rgba(18,14,8, 0.72);
+      &__content{ width: 100%; display: flex; justify-content: space-between; align-items: center;}
+      &__right{ width: 775px; display: flex; justify-content: space-between; align-items: center;}
+      &__nav{width: 585px; display: flex; justify-content: space-between; align-items: center; list-style-type: none; margin: 0; padding: 0; }
+      &__login{ width: 121px;
+        a{ width: 100%; height: 34px; display: flex; justify-content: center; align-items: center; border-radius: 5px; border:1px solid #ffca27; color: #fefefe; font-size: 18px; font-weight: 400; text-decoration: none;
+          &:hover{ background-color: #ffca27; color: #000;}
+        }
+      }
+    }
+    .menu{ font-weight: 400; font-size: 18px; white-space: nowrap;
+      ul{ list-style-type: none; margin: 0; padding: 0;}
+      a{ color: #fff; text-decoration: none; letter-spacing: 0.4px;
+        &:hover{ text-decoration: none; color: #ffca27;}
+      }
+      li:hover>ul{ display: block;}
+      li{ position: relative;height: 99px; line-height: 99px;}
+      li>ul{ position: absolute;  background-color: rgba(18,14,8, 0.72); padding: 17px 20px 10px; left: -20px; top: 100%; font-size: 16px; display: none;}
+      ul>li{ margin-bottom: 10px; height: auto; line-height: 1;}
+    }
+/*END header*/
