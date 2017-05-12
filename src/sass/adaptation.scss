@@ -1,0 +1,58 @@
+@media screen and (max-width: 1400px ) {
+  .video__tube{transform:translate(0 , 0); top:auto; left: auto; position: relative;}
+  .top-block{ min-height: 1px;}
+}
+@media screen and (max-width: 992px ) {
+  /*header*/
+  .butter{ display: block; cursor: pointer;}
+  .header__content{ height: 99px;}
+  .header__nav{ position: absolute;  background-color: rgba(18,14,8, 0.72); top: 99px; left: 50%;  width: 100%; padding:  0 15px; opacity: 0; transform-origin: 50% 0; transform: scaleY(0) translateX(-50%); transition:all 200ms;
+    &.show{transform: scaleY(1) translateX(-50%); opacity: 1;}
+  }
+  .header__right{ width: auto;}
+  .menu li:last-child > ul{ left: auto; right: -15px;}
+  /*END header*/
+  /*footer*/
+  .footer{ padding-top: 25px; }
+  .footer__col{ width: 100%; margin-bottom: 20px; position: relative;}
+  .footer__nav{ width: 50%;}
+  .footer__logo{ text-align: center;}
+  .footer__contacts{ padding-left: 25px; padding-right: 50px;
+    h6{margin: 0px 0 8px;}
+    a{ line-height: 1.15;}
+  }
+  .footer__addres{ margin-bottom: 0;}
+  .footer__socials{ position: absolute; right: 0; top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;
+    a{ margin-right: 0; margin-bottom: 10px;}
+  }
+  .footer__mail{ margin-bottom: 0;}
+  .footer__addres:before{ top: 3px;}
+  .footer__mail:before{ top: 6px;}
+  /*END footer*/
+  /*top-block*/
+  .video__tube{ display: none;}
+  .top-block{ min-height: 454px;}
+  /*top-block*/
+}
+@media screen and (max-width: 666px ) {
+  /*header*/
+  .header__nav{flex-wrap: wrap; padding: 0 15px 15px;}
+  .menu li{ width: 100%; height: auto; line-height: 1.5;}
+  .menu li > ul{ position: relative; left: auto; top: auto;}
+  /*END header*/
+}
+@media screen and (max-width: 480px ) {
+  /*header*/
+  .header__content{flex-wrap: wrap; height: auto; padding:10px 0;}
+  .header__logo{ width: 100%; text-align: center; margin-bottom: 10px;}
+  .header__right{ width: 100%;}
+  .butter{ position: relative; left: auto; top: auto;}
+  .header__nav{ top: 100%;}
+  /*END header*/
+  /*footer*/
+  .footer__contacts{ margin-top: 10px;}
+  .footer__nav{ width: 100%; margin-bottom: 0;
+    a{ margin-bottom: 8px;}
+  }
+  /*END footer*/
+}
