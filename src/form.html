@@ -1,0 +1,135 @@
+//= partials/head.html
+
+<div class="global-wrapper">
+    //= partials/header.html
+    <section class="top-img" style="background-image:url(images/akk.jpg);">
+        <div class="mbox">
+
+            <h1 class="line">Survey for new client</h1>
+        </div>
+        <div class="account">
+            <div class="mbox">
+                <ul class="account__nav">
+                    <li><a href="#" >Invoices</a></li>
+                    <li><a href="#"> Retainer packages</a></li>
+                    <li><a href="#"> Show packages</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="main">
+        <section class="akk-show form-cli">
+            <div class="mbox">
+                <h2>New client survey</h2>
+                <form action="ajax.php" class="new-client">
+                    <div class="form-cli__item">
+                        <label>
+                            <span class="form-cli__title required">Customer Name</span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="form-cli__item">
+                        <label>
+                            <span class="form-cli__title required">Company Name</span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="form-cli__item">
+                        <label>
+                            <span class="form-cli__title required">DBA Name</span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="form-cli__block-title">ADDRESS</div>
+                    <div class="form-cli__block">
+                        <div class="form-cli__item">
+                            <label>
+                                <span class="form-cli__title required">Company Name</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                        <div class="form-cli__item">
+                            <label>
+                                <span class="form-cli__title required">DBA Name</span>
+                                <select name="" id="">
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-cli__block-title">ADDRESS 2</div>
+                    <div class="form-cli__block">
+                        <div class="form-cli__item">
+                            <label>
+                                <span class="form-cli__title">Company Name</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                        <div class="form-cli__item">
+                            <label>
+                                <span class="form-cli__title required">DBA Name</span>
+                                <select name="" id="">
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                    <option value="">test</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="form-cli__item">
+                            <span class="form-cli__title required">DBA Name</span>
+                            <label><input type="radio" name="test"><span>Retailer</span></label>
+                            <label><input type="radio" name="test"><span>Wholesaler</span></label>
+                            <label><input type="radio" name="test"><span>Manufacturer</span></label>
+                            <label><input type="radio" name="test"><span>Service Based Company</span></label>
+                            <label><input type="radio" name="test"><span>Technology Based Company</span></label>
+                            <label><input type="radio" name="test"><span>Finance Based Company</span></label>
+                            <label><input type="radio" name="test"><span>Marketing Company</span></label>
+                        </div>
+                        <div class="form-cli__item form-cli__item--full">
+                            <label>
+                                <span class="form-cli__title">Company Name</span>
+                                <textarea cols="30" rows="10"></textarea>
+                            </label>
+                        </div>
+                        <div class="form-cli__item ">
+                            <label>
+                                <span class="form-cli__title">Company Name</span>
+                                <input type="file">
+                            </label>
+                        </div>
+                        <div class="form-cli__item">
+                            <span class="form-cli__title required">DBA Name</span>
+                            <label><input type="checkbox" ><span>Retailer</span></label>
+                            <label><input type="checkbox" ><span>Wholesaler</span></label>
+                            <label><input type="checkbox" ><span>Manufacturer</span></label>
+                            <label><input type="checkbox" ><span>Service Based Company</span></label>
+                            <label><input type="checkbox" ><span>Technology Based Company</span></label>
+                            <label><input type="checkbox" ><span>Finance Based Company</span></label>
+                            <label><input type="checkbox" ><span>Marketing Company</span></label>
+                        </div>
+                    </div>
+                    <div class="form-cli__center">
+                        <h2>Verification</h2>
+                        <p>Logged in as <a href="#">exemple test</a> not required</p>
+                        <button class="submit-but"><span>DONE</span></button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </div>
+    //= partials/hidden-block.html
+    //= partials/footer.html
+</div>
+</body>
+</html>
