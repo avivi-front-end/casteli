@@ -94,8 +94,59 @@ function autorizedClick() {
 
     });
 }
+function slidersCompany() {
+    var slider =$('.company__slider');
+    if(slider.length > 0){
+        slider.each(function () {
+            $(this).slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: true,
+                responsive: [{breakpoint: 1150, settings: {slidesToShow: 3 } },
+                            { breakpoint: 550, settings: { slidesToShow: 2 } },
+                            { breakpoint: 479, settings: { slidesToShow: 1 } } ]
+            });
+        });
+    }
+}
+function sliderIndusties() {
+    var slider = $('.industries__slider');
+    if(slider.length > 0){
+        slider.each(function () {
+            $(this).slick({
+                infinite: true,
+                rows:3,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: true,
+                responsive: [{breakpoint: 1150, settings: {slidesToShow: 2 } },
+                    { breakpoint: 767, settings: { slidesToShow: 2 } },
+                    { breakpoint: 580, settings: { slidesToShow: 1 } } ]
+            });
+        });
+    }
+}
+function dotted() {
+    var dot = $('.dotted');
+    if(dot.length > 0){
+        dot.each(function(){
+            $(this).dotdotdot();
+            var that = $(this);
+            $(window).resize(function () {
+                that.trigger("update");
+            });
+        });
+
+    }
+}
 $(document).ready(function () {
     butter();
     autorizedClick();
+    slidersCompany();
+    sliderIndusties();
+    dotted();
 
 });

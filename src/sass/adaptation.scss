@@ -4,6 +4,9 @@
   .tab-detail__price{ width: 60px;}
   .tab-detail__file{ width: 500px;}
 }
+@media screen and (max-width: 1150px ) {
+  .company__slider-wrap{ width: 720px;}
+}
 @media screen and (max-width: 992px ) {
   /*text*/
       h1{ font-size:48px;}
@@ -50,12 +53,25 @@
   .akk-show__row{flex-wrap: wrap;}
   .akk-show__cell{ padding:7px 0;}
   .tab-detail__file{ width: 100%; padding-right: 0;}
+  .company__slider-wrap{ width: 100%;}
+  .company__row{flex-wrap: wrap; padding: 10px 0;}
+  .company__name{ width: 100%;}
+  .industries__slide{ width: 240px;}
+  .industries__img{ min-height: 148px;}
+  .industries__wrap{ padding: 0;}
+  .slick-prev{ left: -6px;}
+  .slick-next{ right: -6px;}
 }
 @media screen and (max-width: 767px ) {
   .six-item__content{ padding: 21px 0 0;}
   .six-item__item-wrap{ width: 50%; margin-bottom: 0;}
   .four-item__num{ font-size: 30px;}
   .four-item__img{ width: 40%;}
+  .blog__text{ width: 100%;}
+  .blog__img{ display: none;}
+  .blog__mobile{ display: block;}
+  .blog__text,
+  .blog__text--left{ padding: 0;}
 }
 @media screen and (max-width: 666px ) {
   /*header*/
@@ -81,6 +97,10 @@
   .akk-show{ padding: 0;}
   .account__nav li{ font-size: 16px; margin: 0 5px; text-align: center;}
   .form-cli__item{ width: 100%; margin-bottom: 12px;}
+  .company{ padding:40px 0 0;}
+  .company__content{ margin-top: 40px;}
+  .industries{ padding: 0;}
+  .blog{ padding:40px 0 0;}
 }
 @media screen and (max-width: 480px ) {
   /*header*/
